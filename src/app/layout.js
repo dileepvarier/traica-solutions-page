@@ -18,10 +18,19 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="light-mode">
+    <html lang="en" className="light-mode" style={{colorScheme: 'light'}}>
       <head>
-        <meta name="color-scheme" content="light" />
+        <meta name="color-scheme" content="light only" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff" />
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#ffffff" />
+        <style dangerouslySetInnerHTML={{__html: `
+          html, body { 
+            background: #ffffff !important; 
+            color: #1e293b !important;
+            color-scheme: light only !important;
+          }
+        `}} />
         {/* Google Analytics */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
         <script
@@ -35,7 +44,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable}`} style={{background: '#ffffff', color: '#1e293b'}}>
         {children}
       </body>
     </html>
