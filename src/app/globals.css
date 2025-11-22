@@ -59,4 +59,22 @@ input, textarea, select {
   border: 1px solid #e2e8f0;
 }
 
+/* Minimal fix for Samsung Internet browser dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+  }
+  
+  body {
+    background-color: white;
+    color: #1e293b;
+  }
+  
+  .page {
+    background-color: white;
+  }
+}
+
 
