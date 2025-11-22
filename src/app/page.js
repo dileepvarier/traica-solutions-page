@@ -1,5 +1,7 @@
 import styles from "./page.module.css";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/traica-solutions-page' : '';
+
 export default function Home() {
   return (
     <div className={styles.page}>
@@ -8,7 +10,7 @@ export default function Home() {
         <div className={styles.heroContent}>
           <div className={styles.logoContainer}>
             <img 
-              src="/logo.png" 
+              src={`${basePath}/logo.png`}
               alt="Trica Solutions Logo" 
               className={styles.logoImage}
             />
