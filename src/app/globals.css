@@ -76,3 +76,22 @@ input, textarea, select {
   font-family: inherit;
 }
 
+/* Ultra-aggressive light mode enforcement for all browsers including Samsung Internet */
+* {
+  color-scheme: light !important;
+}
+
+html, body, #__next, [data-theme], [data-color-scheme] {
+  background: #ffffff !important;
+  color: #1e293b !important;
+  color-scheme: light !important;
+}
+
+/* Override any webkit/Samsung specific dark mode */
+@supports (-webkit-appearance: none) {
+  html, body {
+    -webkit-color-scheme: light !important;
+    color-scheme: light !important;
+  }
+}
+
