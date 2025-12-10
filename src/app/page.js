@@ -169,7 +169,7 @@ export default function Home() {
                 <li>Production Best Practices</li>
               </ul>
               <a 
-                href={`${basePath}/brochures/advanced-devops-kubernetes-docker.pdf`} 
+                href={`${basePath}/brochures/Catalog_Kubernetes_with_Applied_DevOps.pdf`} 
                 download
                 className={styles.downloadBtn}
               >
@@ -195,7 +195,7 @@ export default function Home() {
                 <li>Real-world DevOps Projects</li>
               </ul>
               <a 
-                href={`${basePath}/brochures/college-to-corporate-devops.pdf`} 
+                href={`${basePath}/brochures/College to Corporate – DevOps  Cloud Accelerator Program.pdf`} 
                 download
                 className={styles.downloadBtn}
               >
@@ -221,7 +221,7 @@ export default function Home() {
                 <li>Real-world Python Applications</li>
               </ul>
               <a 
-                href={`${basePath}/brochures/basics-of-python.pdf`} 
+                href={`${basePath}/brochures/Python_beginner_Catalog.pdf`} 
                 download
                 className={styles.downloadBtn}
               >
@@ -247,7 +247,7 @@ export default function Home() {
                 <li>Security Scans & Code Quality</li>
               </ul>
               <a 
-                href={`${basePath}/brochures/beginner-qa-engineer-training.pdf`} 
+                href={`${basePath}/brochures/Beginner-QA-Engineer-Training-Programme.pdf`} 
                 download
                 className={styles.downloadBtn}
               >
